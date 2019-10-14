@@ -1,0 +1,303 @@
+/*
+CSS Kafka 1.0
+Pelayo Méndez 2019
+
+This portrait is part of my CSS writers portrait project.
+
+All of the portraits start as a variation on the CSS Girl by Sasha Tran.
+https://github.com/sashatran
+*/
+
+.container,
+.face,
+.hair,
+.nose,
+.ear,
+.neck,
+.body,
+.cape,
+.logo,
+.group,
+.fringe,
+.eye,
+.profile-card,
+.yes,
+.no,
+.info,
+.tongue,
+.profile-wrap,
+.name,
+.mouth,
+.eyebrow, .blush {
+  position: absolute;
+}
+
+body {
+  background: #E8E9EB;
+}
+
+.container {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+}
+
+.profile {
+  position: relative;
+  width: 200px;
+  height: 200px;
+ 
+  border: 2px solid #FFF;
+  overflow: hidden;
+  background: #E8E9EB;
+   background-image:
+    radial-gradient(
+      #E1CFAF,
+      #826C55
+    );
+}
+
+.group {
+  left: -7px;
+}
+
+.face {
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  z-index: 20;
+  top: 50px;
+  left: 70px;
+  width: 80px;
+  height: 100px;
+  background: #F0BEAF;
+}
+
+.hair {
+  z-index: 3;
+  top: 30px;
+  left: 50px;
+  width: 120px;
+  height: 200px;
+  border-radius: 100px 100px 0 0;
+  background: #424B54;
+  display:none;
+}
+.hair:before, .hair:after {
+  position: absolute;
+  content: '';
+}
+
+.ear {
+  z-index: 114;
+  top: 86px;
+  left: 45px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  background: #F0BEAF;
+}
+.ear:before {
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  background: #F0BEAF;
+}
+
+.ear.right {
+  left: 145px;
+}
+.ear.right:before {
+  left: 0px;
+  }
+
+.fringe {
+  z-index: 99;
+  top: 40px;
+  left: 55px;
+  width: 40px;
+  height: 45px;
+  background: #424B54;
+  border-radius: 100px 0 100px 100px;
+  transform: scale(0.9) rotate(-210deg);
+}
+
+.fringe:before {
+  position: absolute;
+  content: '';
+  top: 0px;
+  left: -24px;
+   width: 40px;
+  height: 45px;
+  background: #424B54;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  transform: rotate(10deg);
+}
+
+.fringe.right {
+  left: 120px;
+  transform:  scale(0.9)  scaleY(-1) rotate(-20deg);
+}
+
+.eyebrow {
+  z-index: 300;
+  top: 95px;
+  left: 68px;
+  width: 32px;
+  height: 3px;
+  background: #646B73;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  transform: rotate(15deg);
+}
+
+.eyebrow.right {
+  left: 118px;
+  transform: rotate(-15deg);
+}
+
+.eye {
+  z-index: 30;
+  top: 100px;
+  left: 80px;
+  width: 6px;
+  height: 6px;
+  background: #424B54;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+.eye:before {
+  position: absolute;
+  content: '';
+  left: 50px;
+  width: 9px;
+  height: 7px;
+  background: #424B54;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+.blush {
+  z-index: 999;
+  top: 116px;
+  left: 77px;
+  width: 10px;
+  height: 7px;
+  background: #E3879E;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  opacity: 0.4;
+}
+.blush:before {
+  position: absolute;
+  content: '';
+  left: 58px;
+  width: 10px;
+  height: 7px;
+  background: #E3879E;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+.nose {
+  z-index: 20;
+  top: 100px;
+  left: 107px;
+  width: 8px;
+  height: 24px;
+  background: #DB9B99;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+
+.mouth {
+  z-index: 20;
+  top: 135px;
+  left: 100px;
+  width: 15px;
+  height: 2px;
+  border-radius: 0 0 100px 100px;
+  background: #424B54;
+  overflow: hidden;
+}
+
+.shirt {
+  position: relative;
+  top: 5px;
+  left: 38px;
+  width: 30px;
+  height: 100px;
+  background: white;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+.tie {
+  position: relative;
+  top: 1px;
+  left: 7px;
+  width: 15px;
+  height: 100px;
+  background: black;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+.bow {
+  position: relative;
+  top: 4px;
+  left: 8px;
+  width: 12px;
+  height: 10px;
+  background: black;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+.neck {
+  z-index: 13;
+  width: 30px;
+  height: 30px;
+  background: #F0BEAF;
+  top: 130px;
+  left: 97px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+.body {
+  z-index: 10;
+  top: 150px;
+  left: 60px;
+  width: 100px;
+  height: 150px;
+  background: black;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
