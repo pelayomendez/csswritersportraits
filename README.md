@@ -1,4 +1,4 @@
-CSS Writers Portrait Project
+<b>CSS Writers Portrait Project</b>
 
 A collection of writters portraits generated with CSS code.
 
